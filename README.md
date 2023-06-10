@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# shopping mall
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Skill Set
 
-## Available Scripts
+- Firebase (DB / Authentication)
+- Cloudinary (image 관리)
+- TailwindCss
+- React
+- TanStack Query
+- React Router
 
-In the project directory, you can run:
+## 2. Main Features
 
-### `yarn start`
+#### 1. 로그인 / 로그아웃
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 로그인 , 로그아웃 : firebase Authentication 활용
+- 회원 등급 관리
+  -1 : 차단된 회원
+  0 : 비회원
+  1 : 일반회원
+  2 : 우수회원
+  3 : VIP회원
+  10 : 관리자
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 2. 상단 Nav
 
-### `yarn test`
+- 로고
+- 장바구니 (담은 갯수 저장 및 불러오기)
+- 로그인 시 프로필 띄우기
+- 로그인 / 로그아웃 버튼
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 3. 메인 페이지
 
-### `yarn build`
+- 상단 쇼핑몰 베너
+- 전체 상품 리스트 : 기본 8개 노출 , 전체 상품 리스트 클릭 시 [상품 페이지]로 이동
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 4. 상품페이지
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 카테고리
+  - 전체
+  - 남성
+    - 아우터
+    - 상의
+    - 하의
+    - 악세사리
+  - 여성
+    - 아우터
+    - 상의
+    - 하의
+    - 원피스 / 투피스
+    - 악세사리
+- 카테고리 미선택시 전체 상품 노출 1페이지에 8개씩, (paging 또는 더보기 버튼으로 하단에 상품 계속해서 추가)
+- 각 상품 클릭 시, 상품 상세 페이지로 이동
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 5. 상품 상세페이지
 
-### `yarn eject`
+- 상품 상세 이미지
+- 상품 이름
+- 상품 상세 설명
+- 주문 옵션 선택
+- 주문수량 선택
+- 장바구니 담기 / 바로 주문하기
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 6. 어드민 페이지
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6-1. 상품 등록 페이지 - 등록 상품 이미지 - 등록 상품 이름 - 등록 상품 상세 내용 - 등록 상품 옵션 지정 - 등록 상품 재고  
+ - 등록하기 버튼
+6-2. 회원 관리 - 차단된 사용자 (조회 및 등록) - 회원 리스트 ( 이름 / 로그인 방법 및 아이디 / 전화번호 / 주소 / 회원 등급 / 누적 결제 금액 )
